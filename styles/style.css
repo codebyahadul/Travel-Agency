@@ -45,7 +45,7 @@ nav {
 }
 
 nav div h2 {
-    font-size: 24px;
+    font-size: 40px;
     font-weight: bold;
     color: black;
 }
@@ -149,10 +149,12 @@ nav div h2 {
     border-radius: 10px;
     cursor: pointer;
 }
+
 #play-demo-btn i {
     color: red;
-    
+
 }
+
 /* css for offer section */
 .offer-container {
     margin-top: 60px;
@@ -185,21 +187,9 @@ nav div h2 {
 }
 
 #second-offer-div {
-    position: relative;
     background-color: white;
-    z-index: 10;
+    z-index: 20;
     box-shadow: 5px 5px 5px 10px whitesmoke;
-}
-
-#blank-div {
-    position: absolute;
-    width: 80px;
-    height: 60px;
-    background-color: brown;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    bottom: -20px;
-    left: -30px;
 }
 
 /* top seeling section css */
@@ -246,12 +236,12 @@ nav div h2 {
     gap: 150px;
 }
 
-.sub-title{
+.sub-title {
     font-size: 20px;
     color: gray;
 }
 
-.title{
+.title {
     font-size: 40px;
 }
 
@@ -344,13 +334,14 @@ nav div h2 {
     display: flex;
 }
 
-#feature-side-container img{
+#feature-side-container img {
     border-radius: 50%;
     width: 50px;
 }
+
 /* testimonial section */
 
-#message{
+#message {
     width: 50%;
     padding: 10px;
     padding-left: 30px;
@@ -359,24 +350,30 @@ nav div h2 {
     box-shadow: 5px 5px 5px 5px whitesmoke;
     position: relative;
 }
+
 #message p {
     font-size: 14px;
 }
-#message img{
+
+#message img {
     position: absolute;
     top: -20px;
     left: -20px;
 }
-#message-person{
+
+#message-person {
     margin-top: 10px;
 }
-#message-person h5{
+
+#message-person h5 {
     font-size: 18px;
 }
-#message-person p{
+
+#message-person p {
     font-size: 12px;
 }
-.tab-btn{
+
+.tab-btn {
     margin-top: 20px;
     margin-left: 5px;
     border-radius: 50%;
@@ -384,12 +381,14 @@ nav div h2 {
     cursor: pointer;
     background-color: blue;
 }
+
 /* company logo section */
-#company-section-container img{
+#company-section-container img {
     margin-left: 20px;
     margin-top: 20px;
 
 }
+
 /* subscribe section code */
 .subscribe {
     background-color: rgba(153, 169, 222, 0.183);
@@ -399,8 +398,16 @@ nav div h2 {
 
 .under-subscribe {
     padding: 5rem;
+    position: relative;
 }
-
+#send{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 8px;
+    background-color: cornflowerblue;
+    border-radius: 50%;
+}
 .under-subscribe p {
     font-size: 36px;
     width: 65rem;
@@ -409,7 +416,7 @@ nav div h2 {
     padding: 50px;
 }
 
-#input-field{
+#input-field {
     padding: 15px;
     width: 300px;
     border-radius: 10px;
@@ -484,7 +491,9 @@ nav div h2 {
 
     .flex,
     #banner-section,
-    li, #feature-side-container, .icons {
+    li,
+    #feature-side-container,
+    .icons {
         display: block;
     }
 
@@ -494,11 +503,13 @@ nav div h2 {
         text-align: center;
     }
 
-    #banner-text h5, .sub-title {
+    #banner-text h5,
+    .sub-title {
         font-size: 18px;
     }
 
-    #banner-text h1, .title {
+    #banner-text h1,
+    .title {
         font-size: 25px;
     }
 
@@ -507,48 +518,188 @@ nav div h2 {
         font-size: 12px;
         width: 80%;
     }
-    .under-subscribe p, #message{
+
+    .under-subscribe p,
+    #message {
         width: 100%;
         font-size: 14px;
         padding: 0;
         margin-bottom: 5px;
     }
-    #message{
+
+    #message {
         margin-top: 20px;
     }
-    #feature-side-container{
+
+    #feature-side-container {
         width: 100%;
         margin: 0;
         margin-top: 20px;
     }
+
     #banner-text h5 {
         font-size: 12px;
     }
 
     #banner-section img,
     .offer-des,
-    .seeling-container, #feature-second-container img, #input-field{
+    .seeling-container,
+    #feature-second-container img,
+    #input-field {
         width: 100%;
     }
-    #feature-side-container img{
+
+    #feature-side-container img {
         width: 50px;
     }
-    #feature-side-container{
+
+    #feature-side-container {
         margin-left: 0px;
         padding: 0;
         right: 0;
         bottom: 0;
     }
+
     #blank-div {
         display: block;
         visibility: hidden;
     }
-    #feature-second-container,#feature-side-container {
+
+    #feature-second-container,
+    #feature-side-container {
         position: static;
     }
-    .footer{
+
+    .footer {
         text-align: center;
     }
+
+    /* for navbar */
+    #nav-ul {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.5s;
+    }
+
+    #nav-ul.show {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        padding: 0px 20px;
+    }
+
+    /* shared css */
+    .container {
+        margin-top: 80px;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+
+    .flex,
+    #banner-section,
+    li,
+    #feature-side-container,
+    .icons {
+        display: block;
+    }
+
+    #banner-text,
+    .offer-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    #banner-text h5,
+    .sub-title {
+        font-size: 20px;
+    }
+
+    #banner-text h1,
+    .title {
+        font-size: 35px;
+    }
+
+    #banner-text p,
+    .section-sub-title {
+        font-size: 14px;
+        width: 80%;
+    }
+
+    .under-subscribe p,
+    #message {
+        width: 100%;
+        font-size: 16px;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    #message {
+        margin-top: 30px;
+    }
+
+    #feature-side-container {
+        width: 100%;
+        margin: 0;
+        margin-top: 30px;
+    }
+
+    #banner-text h5 {
+        font-size: 14px;
+    }
+
+    #banner-section img,
+    .offer-des,
+    .seeling-container,
+    #feature-second-container img,
+    #input-field {
+        width: 100%;
+    }
+
+    #feature-side-container img {
+        width: 60px;
+    }
+
+    #feature-side-container {
+        margin-left: 0px;
+        padding: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    #blank-div {
+        display: block;
+        visibility: hidden;
+    }
+
+    #feature-second-container,
+    #feature-side-container {
+        position: static;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
     /* for navbar */
     #nav-ul {
         position: absolute;
