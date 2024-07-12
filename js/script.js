@@ -1,7 +1,9 @@
+// for navbar toggling
 function toggleMenu() {
     const navUl = document.getElementById('nav-ul');
     navUl.classList.toggle('show');
 }
+// functionality for testimonial
 const testimonials = [
     {
         img: './images/person1.png',

@@ -155,7 +155,7 @@ nav div h2 {
 
 }
 
-/* css for offer section */
+/* style offer section */
 .offer-container {
     margin-top: 60px;
     padding: 20px;
@@ -192,7 +192,7 @@ nav div h2 {
     box-shadow: 5px 5px 5px 10px whitesmoke;
 }
 
-/* top seeling section css */
+/* style for top seeling section */
 .seeling-container {
     width: 400px;
     margin-top: 60px;
@@ -200,7 +200,6 @@ nav div h2 {
     background-color: white;
     box-shadow: 5px 5px 5px 10px whitesmoke;
     border-radius: 20px;
-    /* margin-left: 10px; */
 }
 
 .seeling-container img {
@@ -231,7 +230,7 @@ nav div h2 {
     font-size: 20px;
 }
 
-/* Feature section css */
+/* style for feature section*/
 #feature-section-container {
     gap: 150px;
 }
@@ -339,7 +338,7 @@ nav div h2 {
     width: 50px;
 }
 
-/* testimonial section */
+/* style for testimonial section */
 
 #message {
     width: 50%;
@@ -382,14 +381,14 @@ nav div h2 {
     background-color: blue;
 }
 
-/* company logo section */
+/* style for company logo section */
 #company-section-container img {
     margin-left: 20px;
     margin-top: 20px;
 
 }
 
-/* subscribe section code */
+/* style for subscribe section */
 .subscribe {
     background-color: rgba(153, 169, 222, 0.183);
     text-align: center;
@@ -436,7 +435,7 @@ nav div h2 {
     cursor: pointer;
 }
 
-/* footer */
+/* style for footer */
 
 .footer {
     justify-content: space-between;
@@ -454,7 +453,6 @@ nav div h2 {
 
 .company {
     margin-top: 15px;
-    /* word-spacing: 10px; */
     line-height: 30px;
 }
 
