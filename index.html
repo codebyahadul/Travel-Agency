@@ -32,6 +32,9 @@
                     <option value="BN">BN</option>
                 </select>
             </ul>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
         <!-- Banner -->
         <section id="banner-section" class="section-container">
@@ -42,7 +45,7 @@
                     listening. Park gate sell they west hard for the.</p>
                 <div id="banner-button-container">
                     <button id="find-more-btn">Find out more</button>
-                    <button id="play-demo-btn">Play Demo</button>
+                    <button id="play-demo-btn"><i class="fa-solid fa-circle-play"></i> Play Demo</button>
                 </div>
             </div>
             <div>
@@ -122,8 +125,8 @@
         <section class="container">
             <div id="feature-section-container" class="flex">
                 <div>
-                    <h4>Easy and Fast</h4>
-                    <h1>Book Your Next Trip <br> In 3 Easy Steps</h1>
+                    <h4 class="sub-title">Easy and Fast</h4>
+                    <h1 class="title">Book Your Next Trip <br> In 3 Easy Steps</h1>
                     <div class="feature-container">
                         <div id="" class="feature-icon">
                             <img src="../../images/destination.png" alt="">
@@ -185,14 +188,39 @@
                 </div>
             </div>
         </section>
+        <!-- Testimonial section -->
+        <section class="container">
+            <div class="flex">
+                <div>
+                    <h4 class="sub-title">Testimonial</h4>
+                    <h1 class="title">What People Say <br> About Us</h1>
+                    <div>
+                        <button class="tab-btn" onclick="showTestimonial(0)"></button>
+                        <button class="tab-btn" onclick="showTestimonial(1)"></button>
+                    </div>
+                </div>
+                <div id="message">
+                    <img id="testimonial-img" src="images/person1.png" alt="Person">
+                    <p id="testimonial-text">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto illo
+                        sunt hic facere accusantium eum dolorum eveniet reprehenderit sed adipisci recusandae quae
+                        rerum, consequatur natus autem tempora ut facilis fugiat commodi. Accusantium consequatur iusto
+                        quae ullam asperiores placeat dolores adipisci, voluptatem architecto nesciunt recusandae, saepe
+                        quibusdam quod repellat ex cupiditate!"</p>
+                    <div id="message-person">
+                        <h5 id="person-name">Mike Taylor</h5>
+                        <p id="person-location">Lahore, Pakistan</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- company icon section -->
         <section class="container">
             <div id="company-section-container" class="flex">
-                <img src="../../images/alibaba.png" alt="">
-                <img src="../../images/snapdocs.png" alt="">
-                <img src="../../images/brex.png" alt="">
-                <img src="../../images/vendr.png" alt="">
-                <img src="../../images/vendr.png" alt="">
+                <img src="./images/alibaba.png" alt="">
+                <img src="./images/snapdocs.png" alt="">
+                <img src="./images/brex.png" alt="">
+                <img src="./images/vendr.png" alt="">
+                <img src="./images/vendr.png" alt="">
             </div>
         </section>
         <!-- subscribe  -->
@@ -202,8 +230,6 @@
                     Subscribe to get information, latest news and other interesting offers
                     about Jadoo
                 </p>
-
-                <i class="email fa-solid fa-envelope"></i>
                 <input type="text" placeholder="Your email" name="" id="input-field" />
                 <input type="submit" id="input-subscribe" value="Subscribe" />
             </div>
@@ -255,6 +281,7 @@
         </section>
     </footer>
     <p class="small">All rights reserved@test.co</p>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
